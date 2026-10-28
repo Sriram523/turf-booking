@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #16a34a; 
+}
+
+
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeSlide {
+  animation: fadeSlide 0.8s ease forwards;
+}
+
+.clip-hover {
+  clip-path: polygon(0 35%, 100% 15%, 100% 100%, 0% 100%);
+  border-radius: 24px;
+}
+
+
+@keyframes spinBall {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.football-loader {
+  animation: spinBall 1s linear infinite;
+}
