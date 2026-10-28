@@ -48,7 +48,7 @@ function App() {
           path="*"
           element={
             <div className="h-screen flex items-center justify-center text-3xl font-bold text-green-800">
-              404 - Page Not Found
+              404 - Pages Not Found
             </div>
           }
         />
